@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBroker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li><a href="#">Nome Site</a></li>
+                    <li><a href="#">PT</a></li>
+                </ul>
+            </nav>
+            <h1>Iniciar sessão</h1>
+            <p>Insira login e senha para acessar sua conta</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                <button type="submit" class="login-btn">Iniciar sessão</button>
+            </form>
+            <div class="signup">
+                <p>Não possui conta? <a href="#">Criar uma conta agora</a></p>
+            </div>
+            <p class="confirm-text">
+                Confirmo que tenho pelo menos 18 anos e concordo com os <a href="#">Termos e Condições</a> e a <a
+                    href="#">Política de Privacidade</a>.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
