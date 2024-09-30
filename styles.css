@@ -95,10 +95,12 @@ p {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  transition: 0.3s all ease;
 }
 
 .login-btn:hover {
   background-color: #248936;
+  transform: scaleX(0.9);
 }
 
 .signup p {
