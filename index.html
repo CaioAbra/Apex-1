@@ -1,145 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>apex</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="icon" href="./logo_ico.svg" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="login-container" id="loginContainer" style="display: flex">
-      <div class="login-box">
-        <nav class="navbar">
-          <ul class="navbar-menu">
-            <li>
-              <a href="#">
-                <img src="./logo.svg" alt="apex" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <h1>Iniciar sessão</h1>
-          <p>Insira login e senha para acessar sua conta</p>
-          <form id="loginForm">
-            <div class="input-group">
-              <label for="userEmail">E-mail</label>
-              <input
-                type="email"
-                id="userEmail"
-                placeholder="Digite seu e-mail"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="userPassword">Senha</label>
-              <div class="password-container">
-                <input
-                  type="password"
-                  id="userPassword"
-                  placeholder="Digite sua senha"
-                  required
-                />
-                <i class="bi bi-eye" id="togglePasswordVisibility"></i>
-              </div>
-            </div>
-            <div class="links">
-              <a href="#" class="forgot-password">Esqueci minha senha</a>
-            </div>
-            <button type="submit" class="login-btn">Iniciar sessão</button>
-          </form>
-          <div class="signup">
-            <p>
-              Não possui conta?
-              <a href="#" class="register-button" id="registerButton"
-                >Criar uma conta agora</a
-              >
-            </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>apex</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" href="./logo_ico.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="login-container" id="loginContainer" style="display: flex">
+    <div class="login-box">
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <li>
+            <a href="#">
+              <img src="./logo.svg" alt="apex" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Iniciar sessão</h1>
+        <p>Insira login e senha para acessar sua conta</p>
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="userEmail">E-mail</label>
+            <input type="email" id="userEmail" placeholder="Digite seu e-mail" required />
           </div>
+          <div class="input-group">
+            <label for="userPassword">Senha</label>
+            <div class="password-container">
+              <input type="password" id="userPassword" placeholder="Digite sua senha" required />
+              <i class="bi bi-eye" id="togglePasswordVisibility"></i>
+            </div>
+          </div>
+          <div class="links">
+            <a href="#" class="forgot-password">Esqueci minha senha</a>
+          </div>
+          <button type="submit" class="login-btn">Iniciar sessão</button>
+        </form>
+        <div class="signup">
+          <p>
+            Não possui conta?
+            <a href="#" class="register-button" id="registerButton">Criar uma conta agora</a>
+          </p>
         </div>
-        <p class="confirm-text">
-          Confirmo que tenho pelo menos 18 anos e concordo com os
-          <a href="#">Termos e Condições</a> e a
-          <a href="#">Política de Privacidade</a>.
-        </p>
       </div>
+      <p class="confirm-text">
+        Confirmo que tenho pelo menos 18 anos e concordo com os
+        <a href="#">Termos e Condições</a> e a
+        <a href="#">Política de Privacidade</a>.
+      </p>
     </div>
+  </div>
 
-    <div
-      class="register-container"
-      id="registerContainer"
-      style="display: none"
-    >
-      <div class="register-box">
-        <nav class="navbar">
-          <ul class="navbar-menu">
-            <li>
-              <a href="#">
-                <img src="./logo.svg" alt="apex" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <h1>Crie sua conta</h1>
-          <p>Insira os dados necessários para o cadastro</p>
-          <form id="registrationForm">
-            <div class="input-group">
-              <label for="fullName">Nome completo</label>
-              <input id="fullName" placeholder="Digite seu nome" required />
-            </div>
-            <div class="input-group">
-              <label for="registerEmail">E-mail</label>
-              <input
-                type="email"
-                id="registerEmail"
-                placeholder="Digite seu e-mail"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="registerPassword">Senha</label>
-              <div class="password-container">
-                <input
-                  type="password"
-                  id="registerPassword"
-                  placeholder="Digite sua senha"
-                  required
-                />
-                <i class="bi bi-eye" id="toggleRegisterPasswordVisibility"></i>
-              </div>
-            </div>
-            <div class="input-group">
-              <label for="confirmPassword">Confirme sua senha</label>
-              <div class="password-container">
-                <input
-                  type="password"
-                  id="confirmPassword"
-                  placeholder="Confirme sua senha"
-                  required
-                />
-                <i class="bi bi-eye" id="toggleConfirmPasswordVisibility"></i>
-              </div>
-            </div>
-
-            <div class="links"></div>
-            <button type="submit" class="login-btn">Criar conta</button>
-          </form>
-          <div class="signup">
-            <p>
-              Li e aceito os termos e condições
-              <input type="checkbox" />
-            </p>
+  <div class="register-container" id="registerContainer" style="display: none">
+    <div class="register-box">
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <li>
+            <a href="#">
+              <img src="./logo.svg" alt="apex" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Crie sua conta</h1>
+        <p>Insira os dados necessários para o cadastro</p>
+        <form id="registrationForm">
+          <div class="input-group">
+            <label for="fullName">Nome completo</label>
+            <input id="fullName" placeholder="Digite seu nome" required />
           </div>
+          <div class="input-group">
+            <label for="registerEmail">E-mail</label>
+            <input type="email" id="registerEmail" placeholder="Digite seu e-mail" required />
+          </div>
+          <div class="input-group">
+            <label for="registerPassword">Senha</label>
+            <div class="password-container">
+              <input type="password" id="registerPassword" placeholder="Digite sua senha" required />
+              <i class="bi bi-eye" id="toggleRegisterPasswordVisibility"></i>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="confirmPassword">Confirme sua senha</label>
+            <div class="password-container">
+              <input type="password" id="confirmPassword" placeholder="Confirme sua senha" required />
+              <i class="bi bi-eye" id="toggleConfirmPasswordVisibility"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-check signup">
+
+              <label class="form-check-label" for="gridCheck">
+                Li e aceito os termos e condições
+              </label>
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+            </div>
+          </div>
+
+          <div class="links"></div>
+
+          <button type="submit" class="login-btn">Criar conta</button>
+        </form>
+        <div class="signup">
+          <p>
+            Já tem uma conta? <a href="#" class="register-button" id="startSession">Iniciar sessão</a>
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="index.js" type="text/javascript"></script>
-  </body>
+  <script src="jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
 </html>
